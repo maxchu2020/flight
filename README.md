@@ -43,10 +43,10 @@ TELEGRAM_CHAT_ID=
 python3 tracker.py
 ```
 
-Cron runs twice daily at 06:00 and 18:00 UTC:
+Cron runs three times daily at 06:00, 14:00, and 22:00 UTC (every 8 hours):
 
 ```
-0 6,18 * * * /usr/bin/python3 /opt/project/flight/tracker.py >> /opt/project/flight/cron.log 2>&1
+0 6,14,22 * * * /usr/bin/python3 /opt/project/flight/tracker.py >> /opt/project/flight/cron.log 2>&1
 ```
 
 ## Data source
