@@ -160,7 +160,7 @@ def check_aircraft(reg: str) -> list:
 def build_message(reg: str, findings: list) -> str:
     now = datetime.now(EDT).strftime('%Y-%m-%d %H:%M EDT')
     lines = [
-        '✈️ <b>CX Special Livery</b>',
+        '✈️ <b>Special Livery</b>',
         f'<b>{reg}</b>  ·  <i>{now}</i>',
         '',
     ]
@@ -185,7 +185,7 @@ def build_message(reg: str, findings: list) -> str:
 
 def main():
     logger.info(
-        f'=== CX Tracker  aircraft={",".join(AIRCRAFT)}'
+        f'=== Special Livery Tracker  aircraft={",".join(AIRCRAFT)}'
         f'  targets={",".join(sorted(TARGET_AIRPORTS))} ==='
     )
     for reg in AIRCRAFT:

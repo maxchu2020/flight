@@ -1,4 +1,4 @@
-# CX Special Livery Flight Tracker
+# Special Livery Flight Tracker
 
 Monitors Cathay Pacific special livery aircraft for appearances at target airports. Sends Telegram alerts when a tracked aircraft is inbound or on the ground.
 
