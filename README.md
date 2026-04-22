@@ -13,6 +13,10 @@ Monitors Cathay Pacific special livery aircraft for appearances at target airpor
 | D-AIMH | Lufthansa | Special livery |
 | D-ABPU | Lufthansa | Special livery |
 | D-AIXL | Lufthansa | Special livery |
+| A6-EET | Emirates | Special livery |
+| A6-EOD | Emirates | Special livery |
+| A6-EUH | Emirates | Special livery |
+| A6-EEW | Emirates | Special livery |
 
 ## Target airports
 

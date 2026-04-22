@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Cathay Pacific Special Livery Flight Tracker
-Monitors B-KQU, B-LJE, B-LRJ for appearances at JFK / YYZ / ANC
-via FlightRadar24 flight/list API. Runs twice daily via cron.
+Special Livery Flight Tracker
+Monitors special livery aircraft for appearances at target airports
+via FlightRadar24 flight/list API. Runs three times daily via cron.
 """
 
 import os
@@ -27,7 +27,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-AIRCRAFT        = ['B-KQU', 'B-LJE', 'B-LRJ', 'D-ABYN', 'D-AIMH', 'D-ABPU', 'D-AIXL']
+AIRCRAFT        = ['B-KQU', 'B-LJE', 'B-LRJ', 'D-ABYN', 'D-AIMH', 'D-ABPU', 'D-AIXL',
+                   'A6-EET', 'A6-EOD', 'A6-EUH', 'A6-EEW']
 TARGET_AIRPORTS = {'JFK', 'YYZ', 'ANC', 'YVR'}
 ON_GROUND_WINDOW_S = 12 * 3600  # alert if landed at target within last 12 h
 
