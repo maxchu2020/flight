@@ -3,7 +3,9 @@
     "allow": [
       "Bash(find /opt/project -maxdepth 3 -type f \\\\\\( -name \"*.py\" -o -name \"*.sh\" \\\\\\) ! -path \"*/.venv/*\" ! -path \"*/__pycache__/*\" ! -path \"*/.git/*\" -exec grep -l \"flight\\\\|airplane\\\\|aircraft\\\\|opensky\\\\|flightaware\\\\|flightradar\\\\|adsb\" {} \\\\;)",
       "Bash(python3 -c ' *)",
-      "Bash(python3 tracker.py)"
+      "Bash(python3 tracker.py)",
+      "Bash(crontab -l)",
+      "Bash(crontab -)"
     ]
   }
 }
