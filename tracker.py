@@ -28,7 +28,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 AIRCRAFT        = ['B-KQU', 'B-LJE', 'B-LRJ', 'D-ABYN', 'D-AIMH', 'D-ABPU', 'D-AIXL',
-                   'A6-EET', 'A6-EOD', 'A6-EUH', 'A6-EEW']
+                   'A6-EET', 'A6-EOD', 'A6-EUH', 'A6-EEW', 'C-GXLR']
 TARGET_AIRPORTS = {'JFK', 'YYZ', 'ANC', 'YVR'}
 ON_GROUND_WINDOW_S = 12 * 3600  # alert if landed at target within last 12 h
 

@@ -17,6 +17,7 @@ Monitors Cathay Pacific special livery aircraft for appearances at target airpor
 | A6-EOD | Emirates | Special livery |
 | A6-EUH | Emirates | Special livery |
 | A6-EEW | Emirates | Special livery |
+| C-GXLR | Air Canada | First A321XLR |
 
 ## Target airports
 
