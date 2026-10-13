@@ -1,6 +1,6 @@
 # Special Livery Flight Tracker
 
-Monitors Cathay Pacific special livery aircraft for appearances at target airports. Sends Telegram alerts when a tracked aircraft is inbound or on the ground.
+Monitors special livery aircraft (Cathay Pacific, Lufthansa, Emirates, Air Canada) for appearances at target airports. Sends Telegram alerts when a tracked aircraft is inbound or on the ground.
 
 ## Tracked aircraft
 
@@ -28,6 +28,8 @@ JFK · YYZ · YVR · ANC
 - **Inbound** — aircraft is airborne with destination at a target airport (includes ETA)
 - **On ground** — aircraft landed at a target airport within the last 12 hours
 
+Each flight alerts at most once per condition. Sent alerts are recorded in `alerted.json` (entries pruned after 3 days, not in git). Times are shown in Toronto time (EDT/EST).
+
 ## Setup
 
 ```bash
@@ -48,7 +50,7 @@ TELEGRAM_CHAT_ID=
 python3 tracker.py
 ```
 
-Cron runs four times daily at 00:00, 06:00, 12:00, and 18:00 UTC (every 6 hours):
+Cron runs four times daily at 00:00, 06:00, 12:00, and 18:00 Beijing time (prod1 is on Asia/Shanghai, UTC+8):
 
 ```
 0 0,6,12,18 * * * /usr/bin/python3 /opt/project/flight/tracker.py >> /opt/project/flight/cron.log 2>&1
