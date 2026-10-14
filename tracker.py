@@ -204,8 +204,8 @@ def build_message(reg: str, findings: list) -> str:
         if f['type'] == 'inbound':
             lines.append(f"🛬 <b>Inbound · {f['airport']}</b>")
             lines.append(f"   {f['callsign']}  {f['origin']} → {f['airport']}")
-            if f.get('status'):
-                lines.append(f"   {f['status']}")
+            # FR24 status text ("Estimated 18:22") is in airport-local time
+            # without a zone label, so only show our converted times
             if f.get('eta'):
                 lines.append(f"   ETA {f['eta']}")
         elif f['type'] == 'on_ground':
@@ -213,8 +213,6 @@ def build_message(reg: str, findings: list) -> str:
             lines.append(f"   {f['callsign']}  {f['origin']} → {f['airport']}")
             if f.get('landed'):
                 lines.append(f"   Landed {f['landed']}")
-            if f.get('status'):
-                lines.append(f"   {f['status']}")
         lines.append('')
     return '\n'.join(lines).strip()
 
