@@ -19,6 +19,7 @@ Monitors special livery aircraft (Cathay Pacific, Lufthansa, Emirates, Air Canad
 | A6-EEW | Emirates | Special livery |
 | C-GXLR | Air Canada | First A321XLR |
 | PH-BVA | KLM | Orange Pride (777-300ER) |
+| PH-BKA | KLM | 100 Years (787-10) |
 
 ## Target airports
 
