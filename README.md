@@ -1,6 +1,6 @@
 # Special Livery Flight Tracker
 
-Monitors special livery aircraft (Cathay Pacific, Lufthansa, Emirates, Air Canada, KLM, Qatar Airways) for appearances at target airports. Sends Telegram alerts when a tracked aircraft is inbound or on the ground.
+Monitors special livery aircraft (Cathay Pacific, Lufthansa, Emirates, KLM, Qatar Airways) for appearances at target airports. Sends Telegram alerts when a tracked aircraft is inbound or on the ground.
 
 ## Tracked aircraft
 
@@ -17,7 +17,6 @@ Monitors special livery aircraft (Cathay Pacific, Lufthansa, Emirates, Air Canad
 | A6-EOD | Emirates | Special livery |
 | A6-EUH | Emirates | Special livery |
 | A6-EEW | Emirates | Special livery |
-| C-GXLR | Air Canada | First A321XLR |
 | PH-BVA | KLM | Orange Pride (777-300ER) |
 | PH-BKA | KLM | 100 Years (787-10) |
 | A7-BEH | Qatar Airways | FIFA World Cup 2026 (777-300ER) |
