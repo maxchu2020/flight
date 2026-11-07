@@ -24,7 +24,7 @@ Monitors special livery aircraft (Cathay Pacific, Lufthansa, Emirates, KLM, Qata
 
 ## Target airports
 
-JFK · YYZ · YVR · ANC
+YYZ · YVR · ANC
 
 ## Alert conditions
 
